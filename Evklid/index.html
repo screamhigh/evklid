@@ -20,19 +20,19 @@
       <nav class="header__nav">
         <ul class="header__nav-menu desctop">
           <li class="header__nav-menu-item">
-            О нас
+            <a href="#" class="header__nav-menu-links">О нас</a>
           </li>
           <li class="header__nav-menu-item">
-            Проекты
+            <a href="#" class="header__nav-menu-links">Проекты</a>
           </li>
           <li class="header__nav-menu-item" >
-            Этапы
+            <a href="#" class="header__nav-menu-links">Этапы</a>
           </li>
           <li class="header__nav-menu-item">
-            Отзывы
+            <a href="#" class="header__nav-menu-links">Отзывы</a>
           </li>
           <li class="header__nav-menu-item">
-            Контакты
+            <a href="#" class="header__nav-menu-links">Контакты</a>
           </li>
         </ul>
     </nav>
@@ -261,13 +261,13 @@
       <div class="footer-left">
         <a href="#"><img src="../Evklid/img/logo_foot.svg" alt="LOGO" class="footer-logo"></a>
         <ul class="footer-nav-list">
-          <li class="footer-nav-item">О нас</li>
-          <li class="footer-nav-item">Проекты</li>
-          <li class="footer-nav-item">Отзывы</li>
-          <li class="footer-nav-item">Договор оферты</li>
-          <li class="footer-nav-item">Договор подряда</li>
-          <li class="footer-nav-item">Конфиденциальность</li>
-          <li class="footer-nav-item">Партнёрское соглашение</li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">О нас</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Проекты</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Отзывы</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Договор оферты</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Договор подряда</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Конфиденциальность</a></li>
+          <li class="footer-nav-item"><a href="#" class="footer-nav-links">Партнёрское соглашение</a></li>
         </ul>
         <ul class="footer-nav-icons">
           <li class="footer-icon-item"><a href="#" class="footer-icon-link fb"></a></li>
@@ -278,13 +278,15 @@
       <div class="footer-form">
         <h2 class="footer-head-form ">Оставить заявку</h2>
         <form action="" class="footer-form-action">
-          <input type="text" placeholder="Фамилия, имя и отчество*" class="form-style">
-          <input type="email" placeholder="E-mail*" class="form-style">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение" class="form-style form-textarea"></textarea>
+          <input type="text" placeholder="Фамилия, имя и отчество*" class="form-style" required>
+          <input type="email" placeholder="E-mail*" class="form-style" required>
+          <textarea name="" id=""  placeholder="Сообщение" class="form-style form-textarea"></textarea>
           <div class="footer-form-btns">
-            <button class="btn">Отравить данные</button>
-            <input type="checkbox" id="agree" name="answer1" value="agree" class="form-check">
-            <label for="agree" class="form-agree"><span >Согласен на обработку данных</span></label>
+                <input type="submit" class="btn footer-form-btn" value="Отравить данные">
+                <div class="checkbox-block">
+                  <input type="checkbox" id="agree"  name="answer1" value="agree" checked  required>
+                  <label for="agree" class="form-agree" >Согласен на обработку данных</label>
+                </div>
              </div>
         </form>
       </div>
