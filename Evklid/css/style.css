@@ -655,9 +655,6 @@ color: var(--white);
  CSS for the main interaction
 */
 
-.tab-panels {
-  display: flex;
-}
 .work__tabset > input[type="radio"] {
   position: absolute;
   left: -200vw;
@@ -1352,4 +1349,5 @@ details summary{
 .footer-form-btn {
   width: 240px;
 
+}
 }
