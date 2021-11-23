@@ -150,7 +150,7 @@ color: var(--black);
 {
   display: none;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -254,12 +254,13 @@ color: var(--black);
 .header__menu-burger
 {
   position: absolute;
-  width: 300px;
+  width: 420px;
+  height: 810px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: var(--white);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -299,6 +300,10 @@ color: var(--black);
   font-weight: 600;
 }
 
+
+.header__menu-burger-item {
+  margin-bottom: 33px;
+}
 
 .header__nav-menu-links:hover {
   border-bottom: 2px solid var(--orange);
@@ -583,7 +588,6 @@ color: var(--white);
 .about-us-small-box {
   display: flex;
   padding: 65px 118px 65px 60px;
-  height: 295px;
   border: 1px solid #CACACA;
   align-items: center;
 }
@@ -655,6 +659,8 @@ color: var(--white);
  CSS for the main interaction
 */
 
+
+
 .work__tabset > input[type="radio"] {
   position: absolute;
   left: -200vw;
@@ -668,9 +674,8 @@ color: var(--white);
 .work__tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
 .work__tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
 .work__tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-.work__tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-.work__tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-.work__tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+.work__tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4)
+{
   display: block;
 }
 
@@ -681,6 +686,7 @@ color: var(--white);
 
 .work__tabset > label {
   position: relative;
+
   display: inline-block;
   cursor: pointer;
 }
@@ -690,6 +696,7 @@ color: var(--white);
   font-size: 18px;
   line-height: 22px;
 }
+
 
 .tab_label:not(:last-child) {
   margin-right: 80px;
@@ -1350,4 +1357,153 @@ details summary{
   width: 240px;
 
 }
+}
+
+@media (max-width: 936px) {
+
+  .header,
+  .header_wrap {
+    height: 69px;
+  }
+
+  .header__menu-burger {
+    width: 300px;
+
+  }
+
+  .hero {
+    margin-bottom: 77px;
+  }
+
+  .slidebar__all-text {
+    padding-top: 160px;
+    padding-left: 40px;
+
+  }
+
+  .slidebar__all-text-h1 {
+    font-size: 50px;
+    line-height: 61px;
+    width: 588px;
+}
+  .slidebar__all-text-p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 588px;
+  }
+
+}
+
+
+
+  @media (max-width: 768px) {
+
+  .header,
+  .header_wrap {
+    height: 69px;
+  }
+
+  .header__menu-burger {
+    width: 300px;
+
+  }
+
+  .slidebar__all-text {
+    padding-top: 160px;
+    padding-left: 40px;
+
+  }
+
+  .about-us__descp {
+    margin-top: 7px;
+  }
+
+  .about-us-info-block-p {
+    width: 366px;
+  }
+
+
+  .about-us-big {
+    height: 650px;
+  }
+
+  .about-us-box-info {
+    width: 570px;
+}
+
+  .about-us-info-block {
+    padding: 34px 40px;
+
+  }
+
+  .about-us-box-img {
+    margin-right: 16px;
+  }
+
+  .about-us-box-img img{
+    max-width: 100%;
+    width: 120px;
+  }
+
+
+  .about-us-small-box {
+    padding: 35px 46px 35px 40px;
+  }
+
+ .work-block-info {
+   flex-direction: column-reverse;
+ }
+
+ .block-img {
+  width: 100%;
+  height: 100%;
+ }
+
+.work {
+  height: 979px;
+}
+
+ .work-block-left,
+ .work-block-right {
+   width: 100%;
+ }
+ .work-block-descrp {
+  width: 100%;
+}
+
+.work-block-heading {
+  margin-top: 31px;
+}
+
+.faq__heading {
+  margin-bottom: 29px;
+}
+.faq-title {
+  flex-basis: 86%;
+
+}
+
+details:nth-child(2n+1) {
+  padding-bottom: 28px;
+}
+
+.faq_descr {
+  width: 670px;
+}
+
+.form-style {
+  margin-bottom: 25px;
+}
+  .footer {
+    height: 792px;
+  }
+
+  .footer-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .footer-nav-list {
+    display: none;
+  }
+
 }
