@@ -1521,7 +1521,7 @@ details:nth-child(2n+1) {
 
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 765px) {
 
   .container {
     padding: 0 15px;
