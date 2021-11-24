@@ -1392,6 +1392,10 @@ details summary{
     width: 588px;
   }
 
+  .form-style {
+    width: 423px;
+  }
+
 }
 
 
@@ -1428,7 +1432,8 @@ details summary{
   }
 
   .about-us-box-info {
-    width: 570px;
+      max-width: 100%;
+      width: 570px;
 }
 
   .about-us-info-block {
@@ -1494,16 +1499,292 @@ details:nth-child(2n+1) {
 .form-style {
   margin-bottom: 25px;
 }
+
   .footer {
     height: 792px;
   }
 
+
   .footer-wrap {
     flex-direction: column-reverse;
+  }
+
+  .footer-form {
+    width:100%;
   }
 
   .footer-nav-list {
     display: none;
   }
 
+}
+
+
+
+@media (max-width: 320px) {
+
+  .container {
+    padding: 0 15px;
+}
+
+.hero {
+  height: 308px;
+  margin-bottom: 60px;
+}
+
+.heading {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.swiper {
+  height: 308px;
+}
+
+.slidebar__all-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+
+.slidebar__all-text-h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  width: 247px;
+
+}
+
+.slidebar__all-text-p {
+font-size: 12px;
+font-weight: normal;
+line-height: 15px;
+width: 247px;
+}
+
+.slidebar__all-text-btn {
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 15px;
+  margin-left: 37px;
+  padding: 10px 22px;
+  width: 162px;
+  height: 40px;
+}
+
+
+.swiper-pagination-bullets span {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 15px !important;
+
+}
+
+
+.about-us {
+  margin-bottom: 60px;
+}
+  .about-us__descp {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  .about-us-info-block {
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    flex-direction: column;
+    padding-top: 300px;
+    background: none;
+  }
+
+  .about_us__btn {
+    padding: 11px 14px;
+    width: 162px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--orange);
+
+  }
+
+
+  .about-us__wrap-bot-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 230px;
+  }
+
+  .about-us-info-block-p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+  }
+
+  .about-us-info-block-p {
+    color:black;
+  }
+
+  .about-us__wrap-bot {
+    margin-top: 8px;
+}
+
+  .about-us-big {
+    height: 200px;
+  }
+
+  .about-us-small-box {
+    flex-direction: column;
+  }
+
+.about-us-box-head {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.about-us-box-p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.about-us-small-box {
+  border:none;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.about-us-box-img {
+  margin: 0;
+}
+
+.about-us-box-img img {
+  max-width: 100%;
+  width: 64px;
+}
+
+
+
+.form-style {
+  width: 100%;
+}
+
+.footer-form {
+  width:100%;
+}
+
+.footer-form-btns {
+  flex-direction: column;
+}
+
+.tab_label:not(:last-child) {
+  margin-right: 16px;
+}
+
+.tab-label {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.work {
+  height: 1055px;
+}
+
+.work__heading  {
+  margin-bottom: 16px;
+}
+
+.work-block-descrp {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.work-block-heading {
+  font-size: 18px;
+}
+
+.work_btn {
+  padding: 11px 14px;
+  width: 162px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.work_btn_dog {
+  padding: 11px 14px;
+  width: 118px;
+  height: 40px;
+}
+
+.faq-title {
+  font-size: 14px;
+  flex-basis: 82%;
+}
+
+
+.faq-krest {
+  transform:  scale(0.6);
+}
+
+.footer-logo {
+  transform:  scale(0.6);
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-head-form {
+  font-size: 24px;
+}
+
+.footer {
+  height: 100%;
+}
+
+.footer-left {
+  margin: 0 auto;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.footer-form-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-form-btn {
+  margin-right: 0;
+  padding: 12px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  width: 180px;
+}
+
+.footer-logo {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.checkbox-block {
+  border-bottom: 1px solid var(--grey);
+}
 }
