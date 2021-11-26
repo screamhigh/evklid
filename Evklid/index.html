@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Евклид - проектные системы</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+      <title>Евклид - проектные системы</title>
 </head>
 <body>
   <!-- HEADER -->
@@ -121,6 +128,10 @@
             </div>
           </div>
         </div>
+        <div class="about-us-info-block_hide">
+          <p class="about-us-info-block-p">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+          <a href="#" class="btn about_us__btn">Подробнее</a>
+        </div>
         <div class="about-us__wrap-bot-right">
           <div class="about-us-small">
             <div class="about-us-small-box">
@@ -154,96 +165,88 @@
 <div class="container">
   <div class="work__container">
     <h2 class="work__heading heading">Как мы работаем</h2>
-    <div class="work__tabset">
-
-         <!-- Tab 1 -->
-         <input type="radio" name="work__tabset" id="tab1" aria-controls="step1" checked>
-         <label for="tab1" class="tab_label">1 Шаг</label>
-         <!-- Tab 2 -->
-         <input type="radio" name="work__tabset" id="tab2" aria-controls="step2">
-         <label for="tab2" class="tab_label">2 Шаг</label>
-         <!-- Tab 3 -->
-         <input type="radio" name="work__tabset" id="tab3" aria-controls="step3">
-         <label for="tab3" class="tab_label">3 Шаг</label>
-           <!-- Tab 4 -->
-         <input type="radio" name="work__tabset" id="tab4" aria-controls="step4">
-         <label for="tab4" class="tab_label">4 Шаг</label>
-
-      <div class="tab-panels">
-          <section id="step1" class="tab-panel">
-            <div class="work-block-info">
-              <div class="work-block-left">
-                <h3 class="work-block-heading">Проводим консультацию</h3>
-                <p  class="work-block-descrp">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                <div class="work-block-btns">
-                  <a href="#" class="work_btn btn">Подробнее</a>
-                  <a href="#" class="work_btn_dog btn">Договор</a>
-                </div>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">1 Шаг</a></li>
+        <li><a href="#tabs-2">2 Шаг</a></li>
+        <li><a href="#tabs-3">3 Шаг</a></li>
+        <li><a href="#tabs-4">4 Шаг</a></li>
+      </ul>
+      <div id="tabs-1">
+          <div class="work-block-info">
+            <div class="work-block-left">
+              <h3 class="work-block-heading">Проводим консультацию</h3>
+              <p  class="work-block-descrp">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+              <div class="work-block-btns">
+                <a href="#" class="work_btn btn">Подробнее</a>
+                <a href="#" class="work_btn_dog btn">Договор</a>
               </div>
-              <div class="work-block-right">
-                <picture>
-                  <source srcset="media-img/work1-768.jpg" media="(max-width: 768px)">
-                  <source srcset="media-img/work1-1024.jpg" media="(max-width: 1024px)">
-                  <img src="../Evklid/img/work1.jpg" alt="" class="block-img">
-                </picture>
+            </div>
+            <div class="work-block-right">
+              <picture>
+                <source srcset="media-img/work1-768.jpg" media="(max-width: 768px)">
+                <source srcset="media-img/work1-1024.jpg" media="(max-width: 1024px)">
+                <img src="../Evklid/img/work1.jpg" alt="" class="block-img">
+              </picture>
+            </div>
+        </div>
+      </div>
+      <div id="tabs-2">
+          <div class="work-block-info">
+            <div class="work-block-left">
+              <h3 class="work-block-heading">Составляем смету</h3>
+              <p  class="work-block-descrp">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+              <div class="work-block-btns">
+                <a href="#" class="work_btn btn">Подробнее</a>
+                <a  href="#" class="work_btn_dog btn">Договор</a>
               </div>
-          </div>
-          </section>
-          <section id="step2" class="tab-panel">
-            <div class="work-block-info">
-              <div class="work-block-left">
-                <h3 class="work-block-heading">Составляем смету</h3>
-                <p  class="work-block-descrp">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
-                <div class="work-block-btns">
-                  <a href="#" class="work_btn btn">Подробнее</a>
-                  <a  href="#" class="work_btn_dog btn">Договор</a>
-                </div>
+            </div>
+            <div class="work-block-right">
+              <picture>
+                <source srcset="media-img/work1-768.jpg" media="(max-width: 768px)">
+                <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
+                <img src="../Evklid/img/work2.jpg" alt="" class="block-img">
+              </picture>
+            </div>
+        </div>
+      </div>
+      <div id="tabs-3">
+          <div class="work-block-info">
+            <div class="work-block-left">
+              <h3 class="work-block-heading">Привлекаем подрядчиков</h3>
+              <p  class="work-block-descrp">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+              <div class="work-block-btns">
+                <button class="work_btn btn">Подробнее</button>
+                <button class="work_btn_dog btn">Договор</button>
               </div>
-              <div class="work-block-right">
-                <picture>
-                  <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
-                  <img src="../Evklid/img/work2.jpg" alt="" class="block-img">
-                </picture>
+            </div>
+            <div class="work-block-right">
+              <picture>
+                <source srcset="media-img/work1-768.jpg" media="(max-width: 768px)">
+                <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
+                <img src="../Evklid/img/work3.jpg" alt="" class="block-img">
+              </picture>
+            </div>
+        </div>
+      </div>
+      <div id="tabs-4">
+          <div class="work-block-info">
+            <div class="work-block-left">
+              <h3 class="work-block-heading">Инспектируем все этапы работ</h3>
+              <p  class="work-block-descrp">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+              <div class="work-block-btns">
+                <button class="work_btn btn">Подробнее</button>
+                <button class="work_btn_dog btn">Договор</button>
               </div>
-          </div>
-          </section>
-          <section id="step3" class="tab-panel">
-            <div class="work-block-info">
-              <div class="work-block-left">
-                <h3 class="work-block-heading">Привлекаем подрядчиков</h3>
-                <p  class="work-block-descrp">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
-                <div class="work-block-btns">
-                  <button class="work_btn btn">Подробнее</button>
-                  <button class="work_btn_dog btn">Договор</button>
-                </div>
-              </div>
-              <div class="work-block-right">
-                <picture>
-                  <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
-                  <img src="../Evklid/img/work3.jpg" alt="" class="block-img">
-                </picture>
-
-              </div>
-          </div>
-          </section>
-          <section id="step4" class="tab-panel">
-            <div class="work-block-info">
-              <div class="work-block-left">
-                <h3 class="work-block-heading">Инспектируем все этапы работ</h3>
-                <p  class="work-block-descrp">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
-                <div class="work-block-btns">
-                  <button class="work_btn btn">Подробнее</button>
-                  <button class="work_btn_dog btn">Договор</button>
-                </div>
-              </div>
-              <div class="work-block-right">
-                <picture>
-                  <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
-                  <img src="../Evklid/img/work4.jpg" alt="" class="block-img">
-                </picture>
-              </div>
-          </div>
-          </section>
+            </div>
+            <div class="work-block-right">
+              <picture>
+                <source srcset="media-img/work1-768.jpg" media="(max-width: 768px)">
+                <source srcset="media-img/work1-1024.jpg" media="(max-width: 1120px)">
+                <img src="../Evklid/img/work4.jpg" alt="" class="block-img">
+              </picture>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -384,6 +387,7 @@
     </div>
   </div>
 </footer>
+
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>

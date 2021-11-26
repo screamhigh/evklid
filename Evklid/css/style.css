@@ -536,6 +536,10 @@ color: var(--white);
   background-position: center center;
 }
 
+
+
+
+
 .about-us-big {
   position: relative;
   max-width: 100%;
@@ -554,6 +558,24 @@ color: var(--white);
   align-items: center;
   justify-content: space-between;
 }
+
+
+.about-us-info-block_hide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  margin-bottom: 32px;
+}
+
+.about-us-info-block_hide p,
+.about-us-info-block_hide .about_us__btn {
+  color: var(--black);
+}
+
+
+
 
 .about-us-info-block-p {
   width: 454px;
@@ -654,87 +676,14 @@ color: var(--white);
 }
 
 
-
-/*
- CSS for the main interaction
-*/
-
-
-
-.work__tabset > input[type="radio"] {
-  position: absolute;
-  left: -200vw;
+.ui-tabs-nav{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
-.work__tabset .tab-panel {
-  display: none;
-}
-
-.work__tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-.work__tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-.work__tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-.work__tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4)
-{
-  display: block;
-}
-
-/*
- Styling
-*/
-
-
-.work__tabset > label {
-  position: relative;
-
-  display: inline-block;
-  cursor: pointer;
-}
-
-.tab_label {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-
-.tab_label:not(:last-child) {
-  margin-right: 80px;
-}
-/* .work__tabset > label::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d;
-} */
-
-.work__tabset > label:hover,
-.work__tabset > input:focus + label {
-  color: var(--orange);
-}
-
-.work__tabset > input:focus + label {
-  color: var(--black);
-  border: 2px solid var(--orange);
-}
-
-.work__tabset > input:focus + label {
-  color: #E1670E;
-  border: none;
-}
-
-.work__tabset > input:checked + label {
-
-  margin-bottom: -1px;
-}
-
-
-.work__tabset {
-  margin: 0;
-}
 .work__heading {
   margin: 0;
   margin-bottom: 50px;
@@ -1520,8 +1469,42 @@ details:nth-child(2n+1) {
 }
 
 
+@media (min-width: 322px) and (max-width: 767px) {
 
-@media (min-width: 320px) and (max-width: 765px) {
+  .slidebar__all-text {
+    margin: 0 auto;
+    position: absolute;
+    width: 253px;
+    left: -34px;
+    right: 0;
+    /* flex-direction: column; */
+    /* padding-top: 60px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    text-align: center;
+  }
+
+  .slidebar__all-text-h1 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 32px;
+
+  }
+
+  .slidebar__all-text-p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .header__menu-burger {
+    width: 350px;
+}
 
   .container {
     padding: 0 15px;
@@ -1595,12 +1578,18 @@ width: 247px;
   }
 
   .about-us-info-block {
-    position: absolute;
+    display: none;
+    /* position: absolute;
     bottom: -30px;
     right: 0px;
     flex-direction: column;
     padding-top: 300px;
-    background: none;
+    background: none; */
+  }
+
+  .about-us-info-block_hide {
+    display: block;
+
   }
 
   .about_us__btn {
@@ -1624,14 +1613,16 @@ width: 247px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 230px;
+    margin-bottom: 0;
   }
+
+
 
   .about-us-info-block-p {
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
-    width: 290px;
+    width: 100%;
   }
 
   .about-us-info-block-p {
@@ -1701,7 +1692,7 @@ width: 247px;
 }
 
 .work {
-  height: 1055px;
+  height: 100%;
 }
 
 .work__heading  {
@@ -1735,6 +1726,10 @@ width: 247px;
   flex-basis: 82%;
 }
 
+.faq_descr {
+  width: 100%;
+  padding: 0 15px;
+}
 
 .faq-krest {
   transform:  scale(0.6);
